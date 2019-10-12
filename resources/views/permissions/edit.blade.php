@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container-fluid">
-    <div class='col-lg-6'>
+    <div class='col-lg-6 mx-auto'>
         <h1><i class='fa fa-key'></i> Edit {{$permission->name}}</h1>
         <br>
         {{ Form::model($permission, array('route' => array('permissions.update', $permission->id), 'method' => 'PUT')) }}{{-- Form model binding to automatically populate our fields with permission data --}}
