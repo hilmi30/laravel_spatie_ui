@@ -7,7 +7,7 @@
 @section('content')
 
 <div class="container-fluid">
-    <div class='col-lg-6'>
+    <div class='col-lg-6 mx-auto'>
 
         <h1><i class='fa fa-user-plus'></i> Edit {{$user->name}}</h1>
         <hr>

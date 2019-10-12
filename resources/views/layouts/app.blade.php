@@ -72,6 +72,19 @@
             </div>
         </nav>
 
+        @if(Session::has('flash_message'))
+            <div class="container mx-auto">      
+                <div class="alert alert-success"><em> {!! session('flash_message') !!}</em>
+                </div>
+            </div>
+        @endif 
+
+        <div class="row">
+            <div class="col-md-6 mx-auto">              
+                @include ('errors.list') {{-- Including error file --}}
+            </div>
+        </div>
+
         <main class="py-4">
             @yield('content')
         </main>
