@@ -20,7 +20,7 @@ class AdminMiddleware
         $user = User::all()->count();
         if (!($user == 1)) {
             //If user does //not have this permission
-            if (!Auth::user()->hasPermissionTo('Administer roles & permissions')) 
+            if (!Auth::user()->hasPermissionTo('super admin')) 
             {
                 abort('401');
             }
